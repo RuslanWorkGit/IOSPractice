@@ -12,8 +12,12 @@ class Phone {
         self.weight = weight
     }
     
-    convenience init(<#parameters#>) {
-        <#statements#>
+    convenience init() {
+        self.init(number: 0, model: "none", weight: 0.0)
+    }
+    
+    convenience init(number: Int, model: String) {
+        self.init(number: number, model: model, weight: 0.0)
     }
     func recieveCall(name: String) {
         print("\(name) is calling")
@@ -60,3 +64,8 @@ print()
 
 myPhone.sendMessage(number: 2742467781)
 
+print("-----------------------------------------------------------")
+print()
+
+let somePhone = Phone(number: 29763191893, model: "Samsung galaxy s")
+print("number of some phone is \(somePhone.number), model of some phone is \(somePhone.model), weight of some phone is \(somePhone.weight)")
