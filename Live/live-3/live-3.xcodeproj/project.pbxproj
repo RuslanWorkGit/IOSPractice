@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B077E1D2ACDF48300B7D7D3 /* MemoryManagmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B077E1C2ACDF48300B7D7D3 /* MemoryManagmentViewController.swift */; };
 		9B45414E2ACB286000CFDD90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B45414D2ACB286000CFDD90 /* AppDelegate.swift */; };
 		9B4541502ACB286000CFDD90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B45414F2ACB286000CFDD90 /* SceneDelegate.swift */; };
 		9B4541522ACB286000CFDD90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4541512ACB286000CFDD90 /* ViewController.swift */; };
 		9B4541552ACB286000CFDD90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4541532ACB286000CFDD90 /* Main.storyboard */; };
 		9B4541572ACB286100CFDD90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4541562ACB286100CFDD90 /* Assets.xcassets */; };
 		9B45415A2ACB286100CFDD90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4541582ACB286100CFDD90 /* LaunchScreen.storyboard */; };
+		9B5E70652ACD685500640BEE /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E70642ACD685500640BEE /* Protocols.swift */; };
+		9B5E70672ACD71AF00640BEE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E70662ACD71AF00640BEE /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B077E1C2ACDF48300B7D7D3 /* MemoryManagmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManagmentViewController.swift; sourceTree = "<group>"; };
 		9B45414A2ACB286000CFDD90 /* live-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "live-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B45414D2ACB286000CFDD90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B45414F2ACB286000CFDD90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		9B4541562ACB286100CFDD90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B4541592ACB286100CFDD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B45415B2ACB286100CFDD90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B5E70642ACD685500640BEE /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		9B5E70662ACD71AF00640BEE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 		9B45414C2ACB286000CFDD90 /* live-3 */ = {
 			isa = PBXGroup;
 			children = (
+				9B5E70642ACD685500640BEE /* Protocols.swift */,
 				9B45414D2ACB286000CFDD90 /* AppDelegate.swift */,
 				9B45414F2ACB286000CFDD90 /* SceneDelegate.swift */,
 				9B4541512ACB286000CFDD90 /* ViewController.swift */,
+				9B5E70662ACD71AF00640BEE /* SecondViewController.swift */,
+				9B077E1C2ACDF48300B7D7D3 /* MemoryManagmentViewController.swift */,
 				9B4541532ACB286000CFDD90 /* Main.storyboard */,
 				9B4541562ACB286100CFDD90 /* Assets.xcassets */,
 				9B4541582ACB286100CFDD90 /* LaunchScreen.storyboard */,
@@ -140,7 +149,10 @@
 			files = (
 				9B4541522ACB286000CFDD90 /* ViewController.swift in Sources */,
 				9B45414E2ACB286000CFDD90 /* AppDelegate.swift in Sources */,
+				9B077E1D2ACDF48300B7D7D3 /* MemoryManagmentViewController.swift in Sources */,
 				9B4541502ACB286000CFDD90 /* SceneDelegate.swift in Sources */,
+				9B5E70672ACD71AF00640BEE /* SecondViewController.swift in Sources */,
+				9B5E70652ACD685500640BEE /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
