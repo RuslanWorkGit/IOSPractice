@@ -18,26 +18,14 @@ class ThirdViewController: UIViewController {
         let centerX = (UIScreen.main.bounds.width - width) / 2
         let centerY = (UIScreen.main.bounds.height - height) / 2
         
-        let yellowPosition = CGRect(x: centerX, y: centerY, width: width, height: height)
-        let yellowCircle = UIView(frame: yellowPosition)
-        yellowCircle.backgroundColor = .systemYellow
-        yellowCircle.layer.cornerRadius = width / 2
-        yellowCircle.layer.masksToBounds = true
+        let yellowCircle = createCircle(posX: centerX, posY: centerY, width: width, height: height, color: .systemYellow)
         yellowCircle.alpha = 0.5
         view.addSubview(yellowCircle)
         
-        let redPosition = CGRect(x: centerX + 80, y: centerY - 150, width: width, height: height)
-        let redCircle = UIView(frame: redPosition)
-        redCircle.backgroundColor = .systemRed
-        redCircle.layer.cornerRadius = width / 2
-        redCircle.layer.masksToBounds = true
+        let redCircle = createCircle(posX: centerX + 80, posY: centerY - 150, width: width, height: height, color: .systemRed)
         view.addSubview(redCircle)
         
-        let greenPosition = CGRect(x: centerX - 70, y: centerY + 150, width: width, height: height)
-        let greenCircle = UIView(frame: greenPosition)
-        greenCircle.backgroundColor = .systemGreen
-        greenCircle.layer.cornerRadius = width / 2
-        greenCircle.layer.masksToBounds = true
+        let greenCircle = createCircle(posX: centerX - 70, posY: centerY + 150, width: width, height: height, color: .systemGreen)
         view.addSubview(greenCircle)
         
         view.bringSubviewToFront(yellowCircle)
@@ -46,3 +34,12 @@ class ThirdViewController: UIViewController {
     
 }
 
+func createCircle(posX: CGFloat, posY: CGFloat, width: CGFloat, height: CGFloat, color: UIColor) -> UIView {
+    let circlePosition = CGRect(x: posX, y: posY, width: width, height: height)
+    let circle = UIView(frame: circlePosition)
+    circle.backgroundColor = color
+    circle.layer.cornerRadius = width / 2
+    circle.layer.masksToBounds = true
+    
+    return circle
+}
