@@ -28,8 +28,30 @@ class ViewController: UIViewController {
         
         view.bringSubviewToFront(topButton)
         
+        let rect2 = CGRect(x: 25, y: 25, width: 300, height: 400)
+        let mainButton = MainButton(frame: rect2)
+        view.addSubview(mainButton)
+
+     
     }
+}
 
-
+class MainButton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.backgroundColor = .red
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        self.backgroundColor = .green
+    }
+    
+    func setHiddenState() {
+        self.alpha = 0.2
+    }
 }
 
