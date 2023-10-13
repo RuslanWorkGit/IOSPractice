@@ -34,7 +34,7 @@ class ThirdViewController: UIViewController {
     
 }
 
-func createCircle(posX: CGFloat, posY: CGFloat, width: CGFloat, height: CGFloat, color: UIColor) -> UIView {
+func createCircle(posX: CGFloat, posY: CGFloat, width: CGFloat, height: CGFloat, color: UIColor?) -> UIView {
     let circlePosition = CGRect(x: posX, y: posY, width: width, height: height)
     let circle = UIView(frame: circlePosition)
     circle.backgroundColor = color
