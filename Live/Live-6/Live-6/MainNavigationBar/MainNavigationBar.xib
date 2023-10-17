@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainNavigationBar" customModule="Live_6" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="573" height="136"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpM-fV-r4Y">
+                    <rect key="frame" x="0.0" y="0.0" width="191" height="136"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-HT-3H5">
+                    <rect key="frame" x="382" y="0.0" width="191" height="136"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06T-0i-5Jj">
+                    <rect key="frame" x="191" y="0.0" width="191" height="136"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Press me!"/>
+                    <connections>
+                        <action selector="centralButtonPressed:" destination="-1" eventType="touchUpInside" id="qaI-h8-Bt1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sBV-HT-3H5" secondAttribute="bottom" id="5Ze-FS-w8D"/>
+                <constraint firstAttribute="bottom" secondItem="06T-0i-5Jj" secondAttribute="bottom" id="D5m-SL-vLl"/>
+                <constraint firstItem="06T-0i-5Jj" firstAttribute="leading" secondItem="fpM-fV-r4Y" secondAttribute="trailing" id="QV1-PC-pAP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sBV-HT-3H5" secondAttribute="trailing" id="amM-dN-jbA"/>
+                <constraint firstItem="sBV-HT-3H5" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="bZC-ic-EzJ"/>
+                <constraint firstItem="fpM-fV-r4Y" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="ecH-i1-gvv"/>
+                <constraint firstItem="fpM-fV-r4Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gDR-d5-xOM"/>
+                <constraint firstItem="sBV-HT-3H5" firstAttribute="leading" secondItem="06T-0i-5Jj" secondAttribute="trailing" id="jsf-hM-acL"/>
+                <constraint firstAttribute="bottom" secondItem="fpM-fV-r4Y" secondAttribute="bottom" id="rQw-1h-AcO"/>
+                <constraint firstItem="fpM-fV-r4Y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tWC-fz-SrU"/>
+                <constraint firstItem="sBV-HT-3H5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xa0-mX-WET"/>
+                <constraint firstItem="06T-0i-5Jj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yA6-jZ-pGi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="260.30534351145036" y="-232.3943661971831"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
