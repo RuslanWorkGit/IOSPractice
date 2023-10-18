@@ -11,6 +11,9 @@
 		9B8EBA742AE0246700F67129 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EBA732AE0246700F67129 /* ThirdViewController.swift */; };
 		9BACE2722AE0370900B1B582 /* building.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BACE2702AE0370900B1B582 /* building.json */; };
 		9BACE2732AE0370900B1B582 /* ukraine.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BACE2712AE0370900B1B582 /* ukraine.json */; };
+		9BACE2762AE04F3C00B1B582 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACE2752AE04F3C00B1B582 /* TopBar.swift */; };
+		9BACE2782AE04F4700B1B582 /* TopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BACE2772AE04F4700B1B582 /* TopBar.xib */; };
+		9BACE27A2AE0504900B1B582 /* BaseUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACE2792AE0504900B1B582 /* BaseUI.swift */; };
 		9BB427922ADFD01600406F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB427912ADFD01600406F79 /* AppDelegate.swift */; };
 		9BB427942ADFD01600406F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB427932ADFD01600406F79 /* SceneDelegate.swift */; };
 		9BB427962ADFD01600406F79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB427952ADFD01600406F79 /* ViewController.swift */; };
@@ -26,6 +29,9 @@
 		9B8EBA732AE0246700F67129 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9BACE2702AE0370900B1B582 /* building.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = building.json; path = ../../../../../Downloads/building.json; sourceTree = "<group>"; };
 		9BACE2712AE0370900B1B582 /* ukraine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ukraine.json; path = ../../../../../Downloads/ukraine.json; sourceTree = "<group>"; };
+		9BACE2752AE04F3C00B1B582 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopBar.swift; path = "Homework-6/FirstTask/TopBar.swift"; sourceTree = SOURCE_ROOT; };
+		9BACE2772AE04F4700B1B582 /* TopBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBar.xib; sourceTree = "<group>"; };
+		9BACE2792AE0504900B1B582 /* BaseUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUI.swift; sourceTree = "<group>"; };
 		9BB4278E2ADFD01600406F79 /* Homework-6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework-6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB427912ADFD01600406F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB427932ADFD01600406F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +85,16 @@
 			path = FirstTask;
 			sourceTree = "<group>";
 		};
+		9BACE2742AE04EB700B1B582 /* MonoBank */ = {
+			isa = PBXGroup;
+			children = (
+				9BACE2752AE04F3C00B1B582 /* TopBar.swift */,
+				9BACE2772AE04F4700B1B582 /* TopBar.xib */,
+				9BACE2792AE0504900B1B582 /* BaseUI.swift */,
+			);
+			path = MonoBank;
+			sourceTree = "<group>";
+		};
 		9BB427852ADFD01600406F79 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +116,7 @@
 		9BB427902ADFD01600406F79 /* Homework-6 */ = {
 			isa = PBXGroup;
 			children = (
+				9BACE2742AE04EB700B1B582 /* MonoBank */,
 				9BACE2702AE0370900B1B582 /* building.json */,
 				9BACE2712AE0370900B1B582 /* ukraine.json */,
 				9B8EBA752AE0246C00F67129 /* FirstTask */,
@@ -177,6 +194,7 @@
 				9BB4279E2ADFD01700406F79 /* LaunchScreen.storyboard in Resources */,
 				9BB4279B2ADFD01700406F79 /* Assets.xcassets in Resources */,
 				9BB427992ADFD01600406F79 /* Main.storyboard in Resources */,
+				9BACE2782AE04F4700B1B582 /* TopBar.xib in Resources */,
 				9BACE2732AE0370900B1B582 /* ukraine.json in Resources */,
 				9BACE2722AE0370900B1B582 /* building.json in Resources */,
 			);
@@ -231,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BACE27A2AE0504900B1B582 /* BaseUI.swift in Sources */,
+				9BACE2762AE04F3C00B1B582 /* TopBar.swift in Sources */,
 				9BB427962ADFD01600406F79 /* ViewController.swift in Sources */,
 				9BB427922ADFD01600406F79 /* AppDelegate.swift in Sources */,
 				9BB427942ADFD01600406F79 /* SceneDelegate.swift in Sources */,

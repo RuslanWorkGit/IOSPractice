@@ -9,11 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topViewControl: TopBar!
+    
+
+    @IBOutlet weak var someView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        
+        topViewControl.leftView.roundSpecificCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: topViewControl.bounds.height / 4)
+        topViewControl.rightView.roundSpecificCorners(corners: [.layerMaxXMinYCorner, .layerMaxXMaxYCorner], radius: topViewControl.bounds.height / 4)
+        
+//        topViewControl.leftView.alpha = 0.5
+//        topViewControl.rightView.alpha = 0.5
+       
+        
+        someView.roundCorners([.topLeft, .bottomLeft], radius: 90)
     }
 
 
 }
+
 
