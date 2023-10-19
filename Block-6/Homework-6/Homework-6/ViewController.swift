@@ -9,10 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var instalments: MenuBlock!
     @IBOutlet weak var topViewControl: TopBar!
     
-
-    @IBOutlet weak var someView: UIView!
+    @IBOutlet weak var partBuy: MenuBlock!
+    
+    @IBOutlet weak var archive: MenuBlock!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,15 +23,17 @@ class ViewController: UIViewController {
         
         topViewControl.leftView.roundSpecificCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: topViewControl.bounds.height / 4)
         topViewControl.rightView.roundSpecificCorners(corners: [.layerMaxXMinYCorner, .layerMaxXMaxYCorner], radius: topViewControl.bounds.height / 4)
+
+        partBuy.configure(with: "Покупка частями", image: UIImage(named: "pawprint"), color: .systemPink)
         
-//        topViewControl.leftView.alpha = 0.5
-//        topViewControl.rightView.alpha = 0.5
-       
+        archive.configure(with: "Архів", image: UIImage(systemName: "checkmark.rectangle.portrait"), color: .lightGray)
+        archive.image.tintColor = .white
         
-        someView.roundCorners([.topLeft, .bottomLeft], radius: 90)
+        instalments.configure(with: "Розстрочка на карту", image: UIImage(named: "analytics"), color: .systemGreen)
+        
+        
+     
     }
-
-
 }
 
 

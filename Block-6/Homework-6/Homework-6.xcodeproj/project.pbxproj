@@ -22,6 +22,8 @@
 		9BB4279E2ADFD01700406F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4279C2ADFD01700406F79 /* LaunchScreen.storyboard */; };
 		9BB427A62ADFD07E00406F79 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB427A52ADFD07E00406F79 /* FirstViewController.swift */; };
 		9BB427A82ADFD08800406F79 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB427A72ADFD08800406F79 /* SecondViewController.swift */; };
+		9BB47D4E2AE1584800A25935 /* MenuBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB47D4D2AE1584800A25935 /* MenuBlock.swift */; };
+		9BB47D502AE1585100A25935 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB47D4F2AE1585100A25935 /* MenuBlock.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		9BB4279F2ADFD01700406F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB427A52ADFD07E00406F79 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9BB427A72ADFD08800406F79 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9BB47D4D2AE1584800A25935 /* MenuBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlock.swift; sourceTree = "<group>"; };
+		9BB47D4F2AE1585100A25935 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
 		B738D65A1C769018FBE2CAAB /* Pods-Homework-6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework-6.debug.xcconfig"; path = "Target Support Files/Pods-Homework-6/Pods-Homework-6.debug.xcconfig"; sourceTree = "<group>"; };
 		BD98BE039B581912A13C6CB8 /* Pods_Homework_6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +95,8 @@
 				9BACE2752AE04F3C00B1B582 /* TopBar.swift */,
 				9BACE2772AE04F4700B1B582 /* TopBar.xib */,
 				9BACE2792AE0504900B1B582 /* BaseUI.swift */,
+				9BB47D4D2AE1584800A25935 /* MenuBlock.swift */,
+				9BB47D4F2AE1585100A25935 /* MenuBlock.xib */,
 			);
 			path = MonoBank;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 				9BB427992ADFD01600406F79 /* Main.storyboard in Resources */,
 				9BACE2782AE04F4700B1B582 /* TopBar.xib in Resources */,
 				9BACE2732AE0370900B1B582 /* ukraine.json in Resources */,
+				9BB47D502AE1585100A25935 /* MenuBlock.xib in Resources */,
 				9BACE2722AE0370900B1B582 /* building.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BACE27A2AE0504900B1B582 /* BaseUI.swift in Sources */,
+				9BB47D4E2AE1584800A25935 /* MenuBlock.swift in Sources */,
 				9BACE2762AE04F3C00B1B582 /* TopBar.swift in Sources */,
 				9BB427962ADFD01600406F79 /* ViewController.swift in Sources */,
 				9BB427922ADFD01600406F79 /* AppDelegate.swift in Sources */,
