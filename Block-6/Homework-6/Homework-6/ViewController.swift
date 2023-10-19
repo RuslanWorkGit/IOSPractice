@@ -38,12 +38,18 @@ class ViewController: UIViewController, MenuBlockDelegate {
     }
     
     func menuButtonPresed(from menuBlock: MenuBlock) {
-        switch menuBlock {
-        case instalments: print("Instalments Menu Button pressed!")
-        case partBuy: print("Part Buy Menu Button pressed!")
-        case archive: print("Archive Menu Button pressed!")
-        default: print("Unknown")
+        
+        guard let text = menuBlock.textLable.text else {
+            return
         }
+        
+        print("\(text) Button pressed!")
+//        switch menuBlock {
+//        case instalments: print("Instalments Menu Button pressed!")
+//        case partBuy: print("Part Buy Menu Button pressed!")
+//        case archive: print("Archive Menu Button pressed!")
+//        default: print("Unknown")
+//        }
     }
 }
 
