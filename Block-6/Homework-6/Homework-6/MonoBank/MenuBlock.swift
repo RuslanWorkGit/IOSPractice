@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol MenuBlockDelegate{
+    func menuButtonPresed(from menuBlock: MenuBlock)
+}
+
 class MenuBlock: BaseUI {
+     
+    var delegate: MenuBlockDelegate?
     
     @IBOutlet var allView: UIView!
     @IBOutlet weak var textLable: UILabel!
@@ -20,5 +26,9 @@ class MenuBlock: BaseUI {
         self.image.image = image
         self.textLable.text = text
         self.backgroundImageColor.backgroundColor = color
+    }
+    
+    @IBAction func menuBlockPressed(_ sender: Any) {
+        delegate?.menuButtonPresed(from: self)
     }
 }

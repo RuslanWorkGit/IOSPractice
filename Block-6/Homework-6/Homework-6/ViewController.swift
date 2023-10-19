@@ -7,19 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MenuBlockDelegate {
+
+    
 
     @IBOutlet weak var instalments: MenuBlock!
+    
     @IBOutlet weak var topViewControl: TopBar!
     
     @IBOutlet weak var partBuy: MenuBlock!
     
     @IBOutlet weak var archive: MenuBlock!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
         topViewControl.leftView.roundSpecificCorners(corners: [.layerMinXMinYCorner, .layerMinXMaxYCorner], radius: topViewControl.bounds.height / 4)
         topViewControl.rightView.roundSpecificCorners(corners: [.layerMaxXMinYCorner, .layerMaxXMaxYCorner], radius: topViewControl.bounds.height / 4)
@@ -31,8 +32,18 @@ class ViewController: UIViewController {
         
         instalments.configure(with: "Розстрочка на карту", image: UIImage(named: "analytics"), color: .systemGreen)
         
-        
-     
+        instalments.delegate = self
+        partBuy.delegate = self
+        archive.delegate = self
+    }
+    
+    func menuButtonPresed(from menuBlock: MenuBlock) {
+        switch menuBlock {
+        case instalments: print("Instalments Menu Button pressed!")
+        case partBuy: print("Part Buy Menu Button pressed!")
+        case archive: print("Archive Menu Button pressed!")
+        default: print("Unknown")
+        }
     }
 }
 
