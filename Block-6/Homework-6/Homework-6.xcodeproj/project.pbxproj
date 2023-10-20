@@ -122,10 +122,10 @@
 		9BB427902ADFD01600406F79 /* Homework-6 */ = {
 			isa = PBXGroup;
 			children = (
+				9B8EBA752AE0246C00F67129 /* FirstTask */,
 				9BACE2742AE04EB700B1B582 /* MonoBank */,
 				9BACE2702AE0370900B1B582 /* building.json */,
 				9BACE2712AE0370900B1B582 /* ukraine.json */,
-				9B8EBA752AE0246C00F67129 /* FirstTask */,
 				9BB427912ADFD01600406F79 /* AppDelegate.swift */,
 				9BB427932ADFD01600406F79 /* SceneDelegate.swift */,
 				9BB427952ADFD01600406F79 /* ViewController.swift */,
