@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfNames.count
@@ -32,5 +32,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.bottomLable.text = arrayOfNames[indexPath.row]
         cell.topLable.text = "\(indexPath.row)"
         return cell
+    }
+    
+}
+
+extension ViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        viewController.name = arrayOfNames[indexPath.row]
+        navigationController?.pushViewController(viewController, animated: true)
+        
     }
 }
