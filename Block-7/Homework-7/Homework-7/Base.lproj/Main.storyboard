@@ -8,10 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="wvb-I4-Mcd">
             <objects>
                 <navigationController id="6MY-gO-okd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="h7H-d7-5TQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gzS-zd-HPV">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -33,31 +34,94 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LTm-pL-bCl">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="143" width="393" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="xuP-91-sdx"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="vYm-tk-LI5"/>
                                 </connections>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4FY-ji-Fec">
+                                <rect key="frame" x="0.0" y="94" width="393" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="LTm-pL-bCl" firstAttribute="top" secondItem="4FY-ji-Fec" secondAttribute="bottom" constant="15" id="OG3-jM-S9g"/>
                             <constraint firstItem="LTm-pL-bCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QHo-Qf-3aX"/>
+                            <constraint firstItem="4FY-ji-Fec" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TgZ-2U-Tv7"/>
+                            <constraint firstItem="4FY-ji-Fec" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="94" id="dgH-4S-PZV"/>
                             <constraint firstItem="LTm-pL-bCl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mVs-XA-SC9"/>
-                            <constraint firstItem="LTm-pL-bCl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pfb-ya-CHK"/>
+                            <constraint firstItem="LTm-pL-bCl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="143" id="pfb-ya-CHK"/>
                             <constraint firstAttribute="bottom" secondItem="LTm-pL-bCl" secondAttribute="bottom" id="rFK-yR-lrl"/>
+                            <constraint firstItem="4FY-ji-Fec" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zHx-jZ-OVl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fyh-Qe-8sR"/>
                     <connections>
+                        <outlet property="cityTextField" destination="4FY-ji-Fec" id="vI8-f5-5Sh"/>
                         <outlet property="tableView" destination="LTm-pL-bCl" id="O84-oT-zbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KRH-VZ-n3d">
+            <objects>
+                <tabBarController id="g8S-JN-7wF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sts-td-SzV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6MY-gO-okd" kind="relationship" relationship="viewControllers" id="75f-vT-QNC"/>
+                        <segue destination="Ko3-Xo-2TQ" kind="relationship" relationship="viewControllers" id="JaB-yc-Uu4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3VA-j6-ewJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2413" y="560"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="267-TS-ma4">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="Ko3-Xo-2TQ" customClass="SecondViewController" customModule="Homework_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="moq-ce-g6S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Owu-qr-Rug">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ko3-Xo-2TQ" id="v1V-0c-x7w"/>
+                                    <outlet property="delegate" destination="Ko3-Xo-2TQ" id="w9N-Lb-gYy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LOE-Vf-HPX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LOE-Vf-HPX" firstAttribute="trailing" secondItem="Owu-qr-Rug" secondAttribute="trailing" id="1kj-rm-Pay"/>
+                            <constraint firstAttribute="bottom" secondItem="Owu-qr-Rug" secondAttribute="bottom" id="4Ra-Cg-0kE"/>
+                            <constraint firstItem="Owu-qr-Rug" firstAttribute="top" secondItem="moq-ce-g6S" secondAttribute="top" id="Ybt-rv-w67"/>
+                            <constraint firstItem="Owu-qr-Rug" firstAttribute="leading" secondItem="LOE-Vf-HPX" secondAttribute="leading" id="hhy-Vv-n7b"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zmy-Dc-med"/>
+                    <connections>
+                        <outlet property="tableView" destination="Owu-qr-Rug" id="QvT-do-Cbd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wg7-Vp-RZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-956" y="813"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="eSn-kE-hyr">

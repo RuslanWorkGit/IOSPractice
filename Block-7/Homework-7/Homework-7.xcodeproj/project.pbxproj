@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B2415B12AEBC77A0093A03C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2415B02AEBC77A0093A03C /* Extension.swift */; };
+		9B83D8672AEC51C5005D1B68 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B83D8662AEC51C5005D1B68 /* Model.swift */; };
+		9B83D8692AEC526E005D1B68 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B83D8682AEC526E005D1B68 /* SecondViewController.swift */; };
 		9BA5BB942AE802E800CC2EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA5BB932AE802E800CC2EA4 /* AppDelegate.swift */; };
 		9BA5BB962AE802E800CC2EA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA5BB952AE802E800CC2EA4 /* SceneDelegate.swift */; };
 		9BA5BB982AE802E800CC2EA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA5BB972AE802E800CC2EA4 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B2415B02AEBC77A0093A03C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		9B83D8662AEC51C5005D1B68 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9B83D8682AEC526E005D1B68 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9BA5BB902AE802E800CC2EA4 /* Homework-7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework-7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA5BB932AE802E800CC2EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA5BB952AE802E800CC2EA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B2415AF2AEBC7690093A03C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B2415B02AEBC77A0093A03C /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9B83D8652AEC518B005D1B68 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				9B83D8682AEC526E005D1B68 /* SecondViewController.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
 		9BA5BB872AE802E800CC2EA4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +80,12 @@
 		9BA5BB922AE802E800CC2EA4 /* Homework-7 */ = {
 			isa = PBXGroup;
 			children = (
+				9B83D8652AEC518B005D1B68 /* Second */,
+				9B2415AF2AEBC7690093A03C /* Extension */,
 				9BE011842AEAEA75000209FB /* First */,
-				9BE011822AEAEA6E000209FB /* DetailViewController.swift */,
 				9BA5BB932AE802E800CC2EA4 /* AppDelegate.swift */,
 				9BA5BB952AE802E800CC2EA4 /* SceneDelegate.swift */,
+				9B83D8662AEC51C5005D1B68 /* Model.swift */,
 				9BA5BB992AE802E800CC2EA4 /* Main.storyboard */,
 				9BA5BB9C2AE802E900CC2EA4 /* Assets.xcassets */,
 				9BA5BB9E2AE802E900CC2EA4 /* LaunchScreen.storyboard */,
@@ -74,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9BA5BB972AE802E800CC2EA4 /* ViewController.swift */,
+				9BE011822AEAEA6E000209FB /* DetailViewController.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -149,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2415B12AEBC77A0093A03C /* Extension.swift in Sources */,
 				9BA5BB982AE802E800CC2EA4 /* ViewController.swift in Sources */,
 				9BA5BB942AE802E800CC2EA4 /* AppDelegate.swift in Sources */,
+				9B83D8672AEC51C5005D1B68 /* Model.swift in Sources */,
+				9B83D8692AEC526E005D1B68 /* SecondViewController.swift in Sources */,
 				9BA5BB962AE802E800CC2EA4 /* SceneDelegate.swift in Sources */,
 				9BE011832AEAEA6E000209FB /* DetailViewController.swift in Sources */,
 			);
