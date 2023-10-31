@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "dan-jpsp2-3-_custom-98d6a8ae1900e40a374e983be220f91b7ead7c13-s1100-c50.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "panorama-view-on-royal-palace-palacio-real-in-the-capital-of-spain-beautiful-city-madrid-from-lookout-of-principe-po-mountain-spain-2BW7RKT.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

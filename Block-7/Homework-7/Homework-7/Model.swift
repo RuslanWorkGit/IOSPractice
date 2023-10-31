@@ -15,5 +15,6 @@ struct Post {
     let description: String
     let countOfComments: Int
     let postedAt: String
+    let nickName: String
     
 }
