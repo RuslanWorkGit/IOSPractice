@@ -1,0 +1,21 @@
+{
+    "type": "list",
+    "responseData": {
+        "users": [
+            {
+                "name": "Bob",
+                "info": {
+                    "age": 21,
+                    "height": 178
+                }
+            },
+            {
+                "name": "Alice",
+                "info": {
+                    "age": 26,
+                    "height": 160
+                }
+            }
+        ]
+    }
+}
