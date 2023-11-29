@@ -1,0 +1,50 @@
+{
+    "count": 2,
+    "companyDescription": "Apple",
+    "listOfData": [
+        {
+            "name": "Iphone",
+            "modelNumber": "13",
+            "countries": ["Ukraine", "USA", "China"],
+            "year": 2022,
+            "price": {
+                "regions": [
+                    {
+                        "name": "Ukraine",
+                        "price": 799
+                    },
+                    {
+                        "name": "USA",
+                        "price": 699
+                    },
+                    {
+                        "name": "China",
+                        "price": 749
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Nimbus",
+            "modelNumber": "3000",
+            "countries": ["England", "USA", "Monaco"],
+            "year": 2003,
+            "price": {
+                "regions": [
+                    {
+                        "name": "England",
+                        "price": 2394
+                    },
+                    {
+                        "name": "USA",
+                        "price": 1999
+                    },
+                    {
+                        "name": "Monaco",
+                        "price": 2999
+                    }
+                ]
+            }
+        }
+    ]
+}
