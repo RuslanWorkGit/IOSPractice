@@ -1,0 +1,7 @@
+
+target 'Homework-8v2' do
+  use_frameworks!
+
+  pod 'Alamofire'
+
+end
