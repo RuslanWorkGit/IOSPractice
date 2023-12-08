@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9B046AC72B1D199800622F33 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B046AC62B1D199800622F33 /* SecondViewController.swift */; };
+		9B8C16E32B23B9AE00AFF646 /* Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8C16E22B23B9AE00AFF646 /* Fake.swift */; };
+		9B8C16EA2B23C68700AFF646 /* FakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8C16E82B23C68700AFF646 /* FakeTableViewCell.swift */; };
+		9B8C16EB2B23C68700AFF646 /* FakeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8C16E92B23C68700AFF646 /* FakeTableViewCell.xib */; };
 		9BD61B812B1E6DDD0032D1D3 /* MovieTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD61B802B1E6DDD0032D1D3 /* MovieTapViewController.swift */; };
 		9BD61B862B1E70780032D1D3 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD61B842B1E70780032D1D3 /* MovieTableViewCell.swift */; };
 		9BD61B872B1E70780032D1D3 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD61B852B1E70780032D1D3 /* MovieTableViewCell.xib */; };
 		9BD61B8A2B1E75BA0032D1D3 /* DonloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD61B892B1E75BA0032D1D3 /* DonloadImage.swift */; };
+		9BE7B5B32B233866003663DC /* FakeDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7B5B22B233866003663DC /* FakeDataViewController.swift */; };
 		9BEC36892B1A6E9100C11B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC36882B1A6E9100C11B66 /* AppDelegate.swift */; };
 		9BEC368B2B1A6E9100C11B66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC368A2B1A6E9100C11B66 /* SceneDelegate.swift */; };
 		9BEC368D2B1A6E9100C11B66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC368C2B1A6E9100C11B66 /* ViewController.swift */; };
@@ -28,10 +32,14 @@
 		6967BF212904E7583B0D5021 /* Pods_Homework_8v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_8v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAEC6D8F15845FCD4896DA9 /* Pods-Homework-8v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework-8v2.debug.xcconfig"; path = "Target Support Files/Pods-Homework-8v2/Pods-Homework-8v2.debug.xcconfig"; sourceTree = "<group>"; };
 		9B046AC62B1D199800622F33 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9B8C16E22B23B9AE00AFF646 /* Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fake.swift; sourceTree = "<group>"; };
+		9B8C16E82B23C68700AFF646 /* FakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTableViewCell.swift; sourceTree = "<group>"; };
+		9B8C16E92B23C68700AFF646 /* FakeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeTableViewCell.xib; sourceTree = "<group>"; };
 		9BD61B802B1E6DDD0032D1D3 /* MovieTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTapViewController.swift; sourceTree = "<group>"; };
 		9BD61B842B1E70780032D1D3 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		9BD61B852B1E70780032D1D3 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		9BD61B892B1E75BA0032D1D3 /* DonloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonloadImage.swift; sourceTree = "<group>"; };
+		9BE7B5B22B233866003663DC /* FakeDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataViewController.swift; sourceTree = "<group>"; };
 		9BEC36852B1A6E9100C11B66 /* Homework-8v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework-8v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEC36882B1A6E9100C11B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BEC368A2B1A6E9100C11B66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +48,7 @@
 		9BEC36912B1A6E9200C11B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BEC36942B1A6E9200C11B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BEC36962B1A6E9200C11B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BEC369C2B1A72B900C11B66 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		9BEC369C2B1A72B900C11B66 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BEC36A22B1A79CC00C11B66 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		9BEC36A42B1A79D700C11B66 /* Trend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trend.swift; sourceTree = "<group>"; };
 		B543ED53869D19836712B9FD /* Pods-Homework-8v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework-8v2.release.xcconfig"; path = "Target Support Files/Pods-Homework-8v2/Pods-Homework-8v2.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,12 +66,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B8C16E52B23C5DA00AFF646 /* FakeDataCell */ = {
+			isa = PBXGroup;
+			children = (
+				9B8C16E82B23C68700AFF646 /* FakeTableViewCell.swift */,
+				9B8C16E92B23C68700AFF646 /* FakeTableViewCell.xib */,
+			);
+			path = FakeDataCell;
+			sourceTree = "<group>";
+		};
 		9BD61B822B1E6E220032D1D3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				9BEC368C2B1A6E9100C11B66 /* ViewController.swift */,
 				9B046AC62B1D199800622F33 /* SecondViewController.swift */,
 				9BD61B802B1E6DDD0032D1D3 /* MovieTapViewController.swift */,
+				9BE7B5B22B233866003663DC /* FakeDataViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -106,6 +124,7 @@
 		9BEC36872B1A6E9100C11B66 /* Homework-8v2 */ = {
 			isa = PBXGroup;
 			children = (
+				9B8C16E52B23C5DA00AFF646 /* FakeDataCell */,
 				9BD61B882B1E75AA0032D1D3 /* Data */,
 				9BD61B832B1E705C0032D1D3 /* MovieCell */,
 				9BD61B822B1E6E220032D1D3 /* ViewController */,
@@ -126,6 +145,7 @@
 			children = (
 				9BEC36A22B1A79CC00C11B66 /* Genre.swift */,
 				9BEC36A42B1A79D700C11B66 /* Trend.swift */,
+				9B8C16E22B23B9AE00AFF646 /* Fake.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +229,7 @@
 			files = (
 				9BEC36952B1A6E9200C11B66 /* LaunchScreen.storyboard in Resources */,
 				9BD61B872B1E70780032D1D3 /* MovieTableViewCell.xib in Resources */,
+				9B8C16EB2B23C68700AFF646 /* FakeTableViewCell.xib in Resources */,
 				9BEC36922B1A6E9200C11B66 /* Assets.xcassets in Resources */,
 				9BEC369D2B1A72B900C11B66 /* Podfile in Resources */,
 				9BEC36902B1A6E9100C11B66 /* Main.storyboard in Resources */,
@@ -265,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B046AC72B1D199800622F33 /* SecondViewController.swift in Sources */,
+				9BE7B5B32B233866003663DC /* FakeDataViewController.swift in Sources */,
 				9BD61B8A2B1E75BA0032D1D3 /* DonloadImage.swift in Sources */,
 				9BD61B812B1E6DDD0032D1D3 /* MovieTapViewController.swift in Sources */,
+				9B8C16EA2B23C68700AFF646 /* FakeTableViewCell.swift in Sources */,
+				9B8C16E32B23B9AE00AFF646 /* Fake.swift in Sources */,
 				9BEC368D2B1A6E9100C11B66 /* ViewController.swift in Sources */,
 				9BEC36892B1A6E9100C11B66 /* AppDelegate.swift in Sources */,
 				9BEC36A52B1A79D700C11B66 /* Trend.swift in Sources */,
