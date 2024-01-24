@@ -13,15 +13,16 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var arrayOfData: [MovieInfo]? = []
     
-    let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=bcfdb7391902da79ee3c28ea459c4d04"
+    let url = " https://api.themoviedb.org/3/trending/movie/week?api_key=bcfdb7391902da79ee3c28ea459c4d04"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: "MovieTableViewCell")
 
-        AF.request(url).validate().responseDecodable(of: Trend.self) { response in
+        AF.request(url).responseDecodable(of: Trend.self) { response in
             self.arrayOfData = response.value?.results
-            let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
-            self.tableView.register(nib, forCellReuseIdentifier: "MovieTableViewCell")
             self.tableView.reloadData()
         }
     
