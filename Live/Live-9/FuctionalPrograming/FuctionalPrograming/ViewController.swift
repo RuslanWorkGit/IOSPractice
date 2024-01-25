@@ -19,7 +19,12 @@ class ViewController: UIViewController {
         print(square)
         
         let someValue = number.map { value in
-            return value * value
+            if value > 3 {
+                return value * value
+            } else {
+                return 1
+            }
+//            return value * value
         }
         print(someValue)
         
