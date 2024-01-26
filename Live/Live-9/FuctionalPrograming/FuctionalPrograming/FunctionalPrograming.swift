@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FunctionalPrograming: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,6 @@ class ViewController: UIViewController {
             } else {
                 return 1
             }
-            
         }
         print(someValue)
         
