@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         
         //MARK: - map
         let number = [1, 2, 3, 4, 5]
+        let array = ["1", "2", "4", "n", "t", "3"]
+        let array2 = [["1", "2"], ["4", "n"], ["t"], ["3"]]
         let square = number.map {$0 * $0}
         print(square)
         
@@ -24,9 +26,17 @@ class ViewController: UIViewController {
             } else {
                 return 1
             }
-//            return value * value
+            
         }
         print(someValue)
+        
+        let some = array2.flatMap { item in
+            item
+        }       
+        print("Flat map: \(some)")
+        
+        let some2 = array.compactMap { Int($0) }
+        print("Compact map: \(some2)" )
         
         //MARK: - filter
         let numbers = [1, 2, 9, 10, 7, 8, 4, 5, 6, 3]
@@ -37,6 +47,11 @@ class ViewController: UIViewController {
         let names = ["Alice", "Bob", "Chack"]
         let totalCount = names.reduce(0) { $0 + $1.count }
         print(totalCount)
+        
+        let totalString = names.reduce("") { partialResult, item in
+            partialResult + item
+        }
+        print(totalString)
         
     }
 
