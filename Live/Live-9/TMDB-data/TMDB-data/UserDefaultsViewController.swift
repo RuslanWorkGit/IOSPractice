@@ -1,9 +1,4 @@
-//
-//  UserDefaultsViewController.swift
-//  TMDB-data
-//
-//  Created by Ruslan Liulka on 26.01.2024.
-//
+
 
 import UIKit
 

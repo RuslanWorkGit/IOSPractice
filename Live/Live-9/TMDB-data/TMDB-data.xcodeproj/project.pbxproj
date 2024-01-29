@@ -19,6 +19,8 @@
 		9B2DE67D2B643B7F00E0AAC1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9B2DE67C2B643B7F00E0AAC1 /* Alamofire */; };
 		9B2DE6802B643F5300E0AAC1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9B2DE67F2B643F5300E0AAC1 /* Realm */; };
 		9B2DE6822B643F5300E0AAC1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9B2DE6812B643F5300E0AAC1 /* RealmSwift */; };
+		9B3BF9262B681F13001631ED /* MovieRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3BF9252B681F13001631ED /* MovieRealm.swift */; };
+		9B3BF9292B682389001631ED /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3BF9282B682389001631ED /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		9B2DE6702B63F57400E0AAC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B2DE6772B63F6FC00E0AAC1 /* FunctionalPrograming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunctionalPrograming.swift; path = ../../../FuctionalPrograming/FuctionalPrograming/FunctionalPrograming.swift; sourceTree = "<group>"; };
 		9B2DE6792B643AC900E0AAC1 /* TMDBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBModels.swift; sourceTree = "<group>"; };
+		9B3BF9252B681F13001631ED /* MovieRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRealm.swift; sourceTree = "<group>"; };
+		9B3BF9282B682389001631ED /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		9B2DE6612B63F57200E0AAC1 /* TMDB-data */ = {
 			isa = PBXGroup;
 			children = (
+				9B3BF9272B681F19001631ED /* Models */,
 				9B2DE6762B63F6A900E0AAC1 /* FunctionalProgramming */,
 				9B2DE6622B63F57200E0AAC1 /* AppDelegate.swift */,
 				9B2DE6642B63F57200E0AAC1 /* SceneDelegate.swift */,
@@ -76,8 +81,8 @@
 				9B2DE66B2B63F57400E0AAC1 /* Assets.xcassets */,
 				9B2DE66D2B63F57400E0AAC1 /* LaunchScreen.storyboard */,
 				9B2DE6702B63F57400E0AAC1 /* Info.plist */,
-				9B2DE6792B643AC900E0AAC1 /* TMDBModels.swift */,
 				9B0CD34D2B6445880073E366 /* UserDefaultsViewController.swift */,
+				9B3BF9282B682389001631ED /* FavoriteViewController.swift */,
 			);
 			path = "TMDB-data";
 			sourceTree = "<group>";
@@ -88,6 +93,15 @@
 				9B2DE6772B63F6FC00E0AAC1 /* FunctionalPrograming.swift */,
 			);
 			path = FunctionalProgramming;
+			sourceTree = "<group>";
+		};
+		9B3BF9272B681F19001631ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B2DE6792B643AC900E0AAC1 /* TMDBModels.swift */,
+				9B3BF9252B681F13001631ED /* MovieRealm.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +186,11 @@
 			files = (
 				9B0CD34E2B6445880073E366 /* UserDefaultsViewController.swift in Sources */,
 				9B2DE6672B63F57200E0AAC1 /* ViewController.swift in Sources */,
+				9B3BF9262B681F13001631ED /* MovieRealm.swift in Sources */,
 				9B2DE6632B63F57200E0AAC1 /* AppDelegate.swift in Sources */,
 				9B2DE6782B63F6FC00E0AAC1 /* FunctionalPrograming.swift in Sources */,
 				9B2DE67A2B643AC900E0AAC1 /* TMDBModels.swift in Sources */,
+				9B3BF9292B682389001631ED /* FavoriteViewController.swift in Sources */,
 				9B2DE6652B63F57200E0AAC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
