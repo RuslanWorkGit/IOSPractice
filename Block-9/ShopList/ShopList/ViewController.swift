@@ -1,5 +1,4 @@
 
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -24,12 +23,10 @@ class ViewController: UIViewController {
     }
     
     func displayAlert() {
-        var dialogMessage = UIAlertController(title: "Confirm", message: "I am an alert message you cannot dissmiss", preferredStyle: .alert)
+        var dialogMessage = UIAlertController(title: "Confirm", message: "Write the product that you wanna add", preferredStyle: .alert)
         
         let ok = UIAlertAction(title: "OK", style: .default) { action in
             print("Ok button tapped")
-            //self.deleteRecord()
-            //print("The product \(dialogMessage.textFields?.first?.text ?? "") add to list")
             self.listOfProduct.append(dialogMessage.textFields?.first?.text ?? "WRONG")
             self.tableView.reloadData()
             self.saveData()
