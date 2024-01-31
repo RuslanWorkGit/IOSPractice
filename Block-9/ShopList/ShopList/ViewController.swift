@@ -27,9 +27,25 @@ class ViewController: UIViewController {
         
         let ok = UIAlertAction(title: "OK", style: .default) { action in
             print("Ok button tapped")
-            self.listOfProduct.append(dialogMessage.textFields?.first?.text ?? "WRONG")
-            self.tableView.reloadData()
-            self.saveData()
+            
+            if let productText = dialogMessage.textFields?.first?.text?.trimmingCharacters(in: .whitespacesAndNewlines), !productText.isEmpty {
+                
+                if !self.listOfProduct.contains(productText) {
+                    self.listOfProduct.append(productText)
+                    self.tableView.reloadData()
+                    self.saveData()
+                } else {
+                    let duplicateProductAlert = UIAlertController(title: "Error Duplicate", message: "Product already exists", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    duplicateProductAlert.addAction(okAction)
+                    self.present(duplicateProductAlert, animated: true, completion: nil)
+                }
+            } else {
+                let emptyInputAlert = UIAlertController(title: "Error", message: "Product name cannot be empty", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                emptyInputAlert.addAction(okAction)
+                self.present(emptyInputAlert, animated: true, completion: nil)
+            }
             
         }
         
